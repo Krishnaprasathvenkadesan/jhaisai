@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified Examination Result</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: white;
+        }
+
+        .header {
+            background-color: #FF9980;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .header span {
+            color: white;
+        }
+
+        .main-content {
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .semester-header {
+            background-color: #2F8080;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .semester-header h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .student-details {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .student-details {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .student-details div {
+            color: #374151;
+        }
+
+        .student-details span {
+            font-weight: 600;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #E5E7EB;
+        }
+
+        th, td {
+            border: 1px solid #E5E7EB;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        thead tr {
+            background-color: #F9FAFB;
+        }
+
+        .footer-info {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            color: #374151;
+        }
+
+        @media (min-width: 768px) {
+            .footer-info {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        .footer-info span {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>UNIFIED | EXAMINATION RESULT</h1>
+        <div>
+            <span>230801074@rajalakshmi.edu.in</span>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="semester-header">
+            <h2>END SEMESTER EXAMINATION RESULT - ODD 2024-2025</h2>
+        </div>
+
+        <div class="student-details">
+            <div>
+                <span>Branch : </span>
+                BE-ECE
+            </div>
+            <div>
+                <span>Name : </span>
+                JhaiSai
+            </div>
+            <div>
+                <span>Register Number : </span>
+                230801074
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SEMESTER</th>
+                        <th>SUBJECT CODE</th>
+                        <th>SUBJECT NAME</th>
+                        <th>GRADE</th>
+                        <th>RESULT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                    <tr>
+                        <td>2</td>
+                        <td>GE23111</td>
+                        <td>Engineering Graphics</td>
+                        <td>B+</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>MA23231</td>
+                        <td>Diffrential Equation and Complex Variables</td>
+                        <td>B+</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>EC23313</td>
+                        <td>Digital Principal and System Design</td>
+                        <td>A</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>GE23121</td>
+                        <td>Analog Circuits I</td>
+                        <td>B+</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>EC23312</td>
+                        <td>Electromagnetic Fields</td>
+                        <td>B+</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>MA23312</td>
+                        <td>Fourier Series and Number Theory</td>
+                        <td>B+</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>MA23312</td>
+                        <td>Principles of Microprocessor and Microcontrollers</td>
+                        <td>A</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>CS23311</td>
+                        <td>Introduction to Python Programming</td>
+                        <td>A</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>EC23321</td>
+                        <td>Analog and Digital circuits - Lab</td>
+                        <td>A</td>
+                        <td>Pass</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer-info">
+            <div>
+                <span>GPA : </span>
+                7.81
+            </div>
+            <div>
+                <span>Result Published Date : </span>
+                22-02-2025
+            </div>
+        </div>
+    </main>
+</body>
+</html>
